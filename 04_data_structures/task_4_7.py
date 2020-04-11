@@ -11,4 +11,4 @@
 
 mac = 'AAAA:BBBB:CCCC'
 n = int(mac.replace(':', ''), 16)
-bin(n)
+bin(n)[2:]
