@@ -19,3 +19,12 @@
 '''
 
 ip = '192.168.3.1'
+a = int(ip[0:3])
+b = int(ip[4:7])
+c = int(ip[8])
+d = int(ip[10])
+a1 = '{:08b}'.format(a)
+b1 = '{:08b}'.format(b)
+c1 = '{:08b}'.format(c)
+d1 = '{:08b}'.format(d)
+print('{:<10} {:<10} {:<10} {:<10}'.format(a,b,c,d), '\n' '{:<10} {:<10} {:<10} {:<10}'.format(a1,b1,c1,d1)
