@@ -14,3 +14,16 @@
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+ip = input('Введите IP-адрес: ')
+oct = int(ip.split('.')[0])
+if oct <= 223:
+    print('Это Unicast адрес')
+elif oct <= 239:
+    print('Это multicast адрес')
+elif oct == 255:
+    print('Это local broadcast адрес')
+elif oct == 0:
+    print('Это unassigned адрес')
+else:
+    print('Это unused адрес')
+
