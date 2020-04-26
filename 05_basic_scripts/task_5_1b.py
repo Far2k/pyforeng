@@ -20,8 +20,8 @@ $ python task_5_1b.py
 То есть эту задачу можно решить без использования условия if.
 '''
 name = input('Введите имя устройства: ')
-tmpl =  
-param = input('Введите имя параметра: ')
+name_var = 
+param = input('Введите имя параметра {}:'.format(name))
 
 london_co = {
     'r1': {
